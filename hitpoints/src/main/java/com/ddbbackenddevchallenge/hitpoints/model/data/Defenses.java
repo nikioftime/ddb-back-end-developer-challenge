@@ -19,6 +19,9 @@ public class Defenses {
     }
 
     /**
+     * Initializes defenses with just creature name. It is assumed that a creature has no defenses
+     * if its defenses were initialized this way
+     * 
      * @param name
      */
     public Defenses(final String name) {
@@ -26,6 +29,8 @@ public class Defenses {
     }
 
     /**
+     * Initlializes defenses with creature name and defenses from character sheet
+     * 
      * @param name
      * @param defenses
      */
@@ -48,6 +53,10 @@ public class Defenses {
     }
 
     /**
+     * Returns most powerful defense for a particular damage type, if it exists.
+     * 
+     * Immunities are more powerful than resistances
+     * 
      * @param damageType
      * @return
      */

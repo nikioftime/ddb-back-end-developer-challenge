@@ -2,6 +2,9 @@ package com.ddbbackenddevchallenge.hitpoints.model.data;
 
 import java.util.List;
 
+/**
+ * Model for reading in character sheet JSON file
+ */
 public class Player {
     private String name;
     private int hitPoints;
